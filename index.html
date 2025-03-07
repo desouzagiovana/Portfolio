@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovana de Souza | Portfólio</title>
+    <style>
+        /* Paleta de Cores - Inspirada nos Ursinhos Carinhosos */
+        :root {
+            --cor-dia-background: #B3D9FF; /* Azul claro (fundo de dia) */
+            --cor-noite-background: #2A3B51; /* Azul escuro (fundo de noite) */
+            --cor-dia-nuvem: #FFB6C1; /* Nuvem cor-de-rosa (dia) */
+            --cor-noite-nuvem: #A8A8A8; /* Nuvem cinza (noite) */
+            --cor-cta: #FF66B2; /* Cor de chamada para ação */
+            --cor-texto: #2C2C2C; /* Texto padrão */
+            --cor-texto-secundario: #8E8E8E; /* Texto secundário */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-dia-background);
+            color: var(--cor-texto);
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: var(--cor-dia-background);
+            color: var(--cor-texto);
+            padding: 20px;
+            text-align: center;
+            
+            top: 0;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #hero {
+            background-color: var(--cor-noite-background);
+            position: relative;
+            height: 500px; /* Começa maior */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            z-index: 2;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #hero h1 {
+            font-size: 3rem;
+        }
+
+        #hero h2 {
+            font-size: 1.5rem;
+        }
+
+        #projetos, #sobre, #contato {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #projetos h2, #sobre h2 {
+            font-size: 2rem;
+            color: var(--cor-texto);
+        }
+
+        .card {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            background-color: var(--cor-dia-nuvem);
+            margin: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            padding: 10px;
+            font-size: 1.2rem;
+            color: var(--cor-texto);
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            background-color: var(--cor-cta);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #FF3385;
+        }
+
+        .linha-do-tempo {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .linha-do-tempo li {
+            background-color: var(--cor-dia-nuvem);
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .linha-do-tempo li::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #FF66B2;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Efeitos de Scroll */
+        #hero.scrolled {
+            background-color: var(--cor-dia-nuvem);
+            height: 400px;
+        }
+
+        #hero-content {
+            z-index: 2;
+        }
+
+        /* Estilo para quando a página desce */
+        .scroll-div {
+            width: 100%;
+            height: 100px;
+            background-color: var(--cor-noite-background);
+            margin-top: 500px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .scroll-div.scrolled {
+            background-color: var(--cor-dia-nuvem);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor.</p>
+        <!-- Modo noturno toggle -->
+        <button id="toggleMode" class="cta-button">🌙 Modo Noturno</button>
+    </header>
+
+    <section id="hero">
+        <div id="hero-content">
+            <h1>Giovana de Souza | Lorem</h1>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <a href="#projetos" class="cta-button">Confira meus Projetos</a>
+        </div>
+    </section>
+
+    <div class="scroll-div"></div>
+
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="card">
+            <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="card">
+            <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="card">
+            <h3>Lorem Ipsum</h3>
+        </div>
+        <div class="card">
+            <h3>Lorem Ipsum</h3>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <ul class="linha-do-tempo">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+        </ul>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</p>
+    </section>
+
+    <script>
+        // Lógica de Modo Noturno
+        const toggleButton = document.getElementById('toggleMode');
+        toggleButton.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            const header = document.querySelector('header');
+            header.style.backgroundColor = document.body.classList.contains('dark-mode') ? '#2A3B51' : '#B3D9FF';
+        });
+
+        // Efeito de Scroll na Hero
+        window.addEventListener('scroll', function() {
+            const heroSection = document.getElementById('hero');
+            const scrollDiv = document.querySelector('.scroll-div');
+
+            if (window.scrollY > 100) {
+                heroSection.classList.add('scrolled');
+                scrollDiv.classList.add('scrolled');
+            } else {
+                heroSection.classList.remove('scrolled');
+                scrollDiv.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
