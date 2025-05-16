@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* posicionar estrelas */
+#stars-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+#header {
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+}
+
+main {
+  position: relative;
+  z-index: 3; 
+}
+
+.bg-gradient {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 100px 20px;
+}
+.animate-gradient-bg {
+    animation: gradient-bg 10s infinite;
+}
+
+/* animação da troca de cor do fundo */
+@keyframes gradient-bg {
+
+    0%,
+    100% {
+        background: #2d2d2e;
+    }
+
+    33% {
+        background: #1d1d3a;
+    }
+
+    66% {
+        background: #201e38;
+    }
+}

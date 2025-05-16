@@ -1,110 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gi portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
-  </head>
-  <body class="flex flex-col mx-w-7xl bg-gray-900">
-      <div class="flex justify-center">
-        <ul class="flex flex-row lg:gap-4">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giovana de Souza</title>
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-          <!-- github -->
-          <li>
-            <a href="">
-              <img src="" alt="" class="lg:h-8 lg:w-8 rounded-full border mt-4">
-            </a>
-          </li>
-          <!-- linkedin -->
-          <li>
-            <a href="">
-              <img src="" alt="" class="lg:h-8 lg:w-8 rounded-full border mt-4">
-            </a>
-          </li>
-          <!-- instagram -->
-          <li>
-            <a href="">
-              <img src="" alt="" class="lg:h-8 lg:w-8 rounded-full border mt-4">
-            </a>
-          </li>
 
-        </ul>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon-16x16.png">
+
+  <!-- SVG'S STACKS ICONES -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body class="relative m-0 p-0 overflow-x-hidden">
+
+  <!-- fundo animado -->
+  <div class="absolute inset-0 -z-10 bg-white dark:bg-gray-800 dark:animate-gradient-bg"></div>
+  <!-- HEADER -->
+  <div id="header"
+    class="relative w-full h-screen flex flex-col items-center justify-center align-center text-center text-black dark:text-white">
+    <canvas id="stars-canvas" class="absolute inset-0 w-full h-full z-0"></canvas>
+
+    <div
+      class="header-content absolute top-4 flex flex-row space-x-4 text-2xl z-20 lg:justify-center lg:flex text-purple-800 dark:text-white">
+      <a href="https://github.com/desouzagiovana" title="GitHub" target="_blank">
+        <span class="fab fa-github"></span>
+      </a>
+      <a href="https://www.linkedin.com/in/giovana-de-souza-1bb446278/" title="LinkedIn" target="_blank">
+        <span class="fab fa-linkedin"></span>
+      </a>
+      <a href="#" title="Instagram">
+        <span class="fab fa-instagram"></span>
+      </a>
+    </div>
+
+    <div class="absolute top-6 right-6 rounded-full border-2 border-green-500">
+      <button id="theme-toggle" class="rounded-full text-xl text-center w-8 h-8 flex items-center justify-center">
+        <i id="theme-icon" class="fa fa-sun text-green-300"></i>
+      </button>
+    </div>
+
+
+    <div class="space-y-4">
+      <div class="flex items-center justify-center space-x-4">
+        <span class="text-2xl lg:text-5xl text-purple-800 dark:text-white" data-aos="zoom-in" data-aos-duration="400"
+          data-aos-delay="900">✦</span>
+
+        <h1 class=" text-4xl lg:text-8xl font-extrabold" data-aos="fade-down" data-aos-duration="600"
+          data-aos-delay="200" data-aos-offset="10" data-aos-easing="ease-out">
+          Oi, sou Giovana
+        </h1>
+
+        <span class="text-2xl lg:text-5xl text-purple-800 dark:text-white" data-aos="zoom-in" data-aos-duration="400"
+          data-aos-delay="1100">✦</span>
       </div>
-      <header class="flex flex-row lg:justify-center lg:items-center min-h-[100vh]">
-        <div class="text-gray-800 dark:text-gray-300 w-1/2 text-center">
-          <h1 class="font-bold lg:text-8xl text-gray-400">Oi, esse é meu portfolio.</h1>
-          <p class="text-lg mt-16 text-pink-600 font-semibold">Como desenvolvedora de sistemas.</p>
+
+      <p class="text-xl text-center" data-aos="fade-down" data-aos-duration="500" data-aos-delay="400"
+        data-aos-offset="50" data-aos-easing="ease-out">
+        Conheça meu portfolio.
+      </p>
+    </div>
+
+    <div class="absolute bottom-10 flex items-center space-x-2 animate-bounce text-purple-700 dark:text-white z-20"
+      data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="10">
+      <span class="fa-solid fa-computer-mouse"></span>
+      <span>Role a página</span>
+    </div>
+
+  </div>
+  <main class="pt-40 bg-white dark:bg-gray-800 dark:animate-gradient-bg" data-aos="fade-up">
+    <!-- SEÇÃO SOBRE MIM -->
+    <section class="relative z-10 py-10 lg:py-20 px-4 text-gray-800 dark:text-gray-100">
+      <div class="max-w-6xl lg:mx-auto mx-4" data-aos="fade-up">
+        <h2 class="text-3xl font-bold uppercase text-center mb-12 animate-gradient-text">
+          Sobre Mim
+        </h2>
+
+        <div class="grid grid-cols-2 gap-6 lg:gap-16 items-center">
+          <!-- Foto à esquerda -->
+          <div class="flex justify-center">
+            <div class="w-56 lg:w-96 h-56 lg:h-96 rounded-lg overflow-hidden shadow-lg bg-gray-700 bg-opacity-30">
+              <img src="caminho/para/sua-foto.jpg" alt="Foto de Giovana" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <!-- Texto à direita -->
+          <div class="space-y-4 lg:mx-8 lg:text-3xl">
+            <p>Sou entusiasta por tecnologia e adoro criar soluções web.</p>
+            <p>Tenho experiência com React, Tailwind e PHP.</p>
+          </div>
         </div>
-      </header>
-
-      <!-- <section class="border border-4 border-purple-600 mt-4 h-80">
-          <p>sobre mim</p>
-      </section>
-      <section class="border border-4 border-green-600 mt-4 h-80">
-          <p>experiencia linha do tempo</p>
-      </section> -->
+      </div>
+    </section>
 
 
-      <h1 class=" text-3xl font-bold text-center text-gray-400 mt-4">Projetos</h1>
-      <!-- projetos -->
-      <section class="m-16 ml-48 mr-48 flex lg:flex-row flex-col items-center gap-24">
-          <!-- projeto 1 -->
-          <a href="" 
-                data-aos="fade-in" 
-                data-aos-duration="700" 
-                data-aos-delay="0"
-                data-aos-easing="ease-in-out">
-            <div class="h-120 w-80 rounded-md border border-gray-600 bg-gray-800 bg-opacity-90 shadow-xl hover:bg-opacity-100 hover:shadow-sm">
-              <img src="" alt="" class="h-60 w-full">
-              <h6 class="text-md font-semibold text-indigo-600 ml-4 mr-4 mt-4">Projeto 1</h6>
-              <p class="ml-4 mr-4 mb-4 mt-2 text-gray-400 text-md">Descrição</p>
+    <!-- SEÇÃO EXPERIÊNCIA & HABILIDADES -->
+
+    <section class="relative z-10 py-20 px-4 bg-transparent text-gray-100">
+
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+
+        <!-- Experiência -->
+
+        <div class="flex flex-row items-center">
+
+          <div class="relative pl-8 text-gray-700 dark:text-white" data-aos="fade-right">
+            <h2 data-aos="fade-up" class="text-3xl font-bold uppercase mb-8 mx-4 dark:text-white">
+              Experiência
+            </h2>
+            <!-- linha -->
+            <div class="absolute left-4 top-0 bottom-0 w-1 bg-gray-500 "></div>
+            <!-- cards -->
+            <div class="relative flex flex-row pb-4">
+              <div class="flex flex-col items-center w-24">
+                <div class="h-20 w-20 overflow-hidden">
+                  <img src="/unimontes_logo.jpeg" alt="unimontesmg_logo"
+                    class="rounded-lg h-full w-full object-cover grayscale">
+                </div>
+                <h3 class="font-semibold break-words text-sm text-center">Academica de Sistemas</h3>
+                <span class="text-sm text-gray-400">2023</span>
+              </div>
+              <p class="mt-4 ml-6">Ano de entrada no bacharelado em Sistemas de Informação.</p>
             </div>
-          </a>
-          <a href="" 
-                data-aos="fade-in" 
-                data-aos-duration="900" 
-                data-aos-delay="100"
-                data-aos-easing="ease-in-out">
-            <div class="h-120 w-80 rounded-md border border-gray-600 bg-gray-800 bg-opacity-90 shadow-xl hover:bg-opacity-100 hover:shadow-sm">
-              <img src="" alt="" class="h-60 w-full">
-              <h6 class="text-md font-semibold text-indigo-600 ml-4 mr-4 mt-4">Projeto 1</h6>
-              <p class="ml-4 mr-4 mb-4 mt-2 text-gray-400 text-md">Descrição</p>
+
+            <div class="relative flex flex-row pb-4" data-aos="fade-right" data-aos-delay="200">
+              <div class="flex flex-col items-center w-24">
+                <div class="h-20 w-20 overflow-hidden">
+                  <img src="/cubos_academy_logo.png" alt="cubos_academy_logo"
+                    class="rounded-lg h-full w-full object-cover">
+                </div>
+                <h3 class="font-semibold break-words text-sm text-center">Academica de Sistemas</h3>
+                <span class="text-sm text-gray-400">2023</span>
+              </div>
+              <p class="mt-4 ml-6">Ano de entrada no bacharelado em Sistemas de Informação.</p>
             </div>
-          </a>
-          <a href="" 
-                data-aos="fade-in" 
-                data-aos-duration="1100" 
-                data-aos-delay="200"
-                data-aos-easing="ease-in-out">
-            <div class="h-120 w-80 rounded-md border border-gray-600 bg-gray-800 bg-opacity-90 shadow-xl hover:bg-opacity-100 hover:shadow-sm">
-              <img src="" alt="" class="h-60 w-full">
-              <h6 class="text-md font-semibold text-indigo-600 ml-4 mr-4 mt-4">Projeto 1</h6>
-              <p class="ml-4 mr-4 mb-4 mt-2 text-gray-400 text-md">Descrição</p>
+
+            <div class="relative flex flex-row pb-4" data-aos="fade-right" data-aos-delay="400">
+              <div class="flex flex-col items-center w-24 ">
+                <div class="h-20 w-20 overflow-hidden">
+                  <img src="/unimontes_logo.jpeg" alt="unimontesmg_logo"
+                    class="rounded-lg h-full w-full object-cover">
+                </div>
+                <h3 class="font-semibold break-words text-sm text-center">Academica de Sistemas</h3>
+                <span class="text-sm text-gray-400">2023</span>
+              </div>
+              <p class="mt-4 ml-6">Ano de entrada no bacharelado em Sistemas de Informação.</p>
             </div>
-          </a>
-          
-      </section>
-      <section class="">
-          <p></p>
-      </section>
-      <footer>
-        <p>redes sociais</p>
-      </footer>
+          </div>
+        </div>
 
+        <!-- Habilidades -->
+        <div>
+          <div class="lg:mx-auto mx-4 p-6 items-center">
+            <div class="grid grid-cols-3 gap-16 text-6xl justify-items-center dark:grayscale">
+              <i class="devicon-php-plain colored dark:devicon-php-plain" ></i>
+              <i class="devicon-laravel-plain colored dark:devicon-laravel-plain"></i>
+              <i class="devicon-html5-plain colored dark:devicon-html5-plain"></i>
+              <i class="devicon-css3-plain colored dark:devicon-css3-plain"></i>
+              <i class="devicon-javascript-plain colored dark:devicon-javascript-plain"></i>
+              <i class="devicon-tailwindcss-original colored dark:devicon-tailwindcss-original"></i>
+              <i class="devicon-mysql-original colored dark:devicon-mysql-original"></i>
+              <i class="devicon-react-original colored dark:devicon-react-original"></i>
+              <i class="devicon-nodejs-plain colored dark:devicon-nodejs-plain"></i>
+              <i class="devicon-git-plain colored dark:devicon-git-plain"></i>
+              <i class="devicon-github-original colored dark:devicon-github-original grayscale hover:grayscale-0"></i>
+              <i class="devicon-vscode-plain colored dark:devicon-vscode-plain"></i>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </section>
 
-      <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          duration: 1200,
-          easing: "ease-in-out",
-          once: true,
-        });
-      </script>
+    <!-- SEÇÃO PROJETOS -->
+    <section class="relative z-10 py-20 px-4 bg-transparent text-gray-700 dark:text-gray-300">
+      <h2 data-aos="fade-up" class="text-3xl font-bold uppercase text-center mb-12 dark:text-white">
+        Projetos
+      </h2>
+      <div class="lg:mx-36 mx-4 grid md:grid-cols-3 gap-8">
+        <a href="#" data-aos="zoom-in" data-aos-delay="100">
+          <div class="dark:bg-gray-800 dark:bg-opacity-50 p-6 rounded-md shadow-md hover:shadow-lg transition">
+            <div class="h-40 bg-gray-700 bg-opacity-30 mb-4 rounded"></div>
+            <h3 class="font-semibold mb-2 text-indigo-400">Projeto 1</h3>
+            <p class="text-sm mb-4">Breve descrição do projeto 1.</p>
+            <span class="flex items-center text-purple-600 dark:text-purple-400 hover:underline"> <i
+                class="fab fa-github m-2"></i>Ver no
+              GitHub</span>
+          </div>
+        </a>
+        <a href="#" data-aos="zoom-in" data-aos-delay="300">
+          <div class="dark:bg-gray-800 dark:bg-opacity-50 p-6 rounded-md shadow-md hover:shadow-lg transition">
+            <div class="h-40 bg-gray-700 bg-opacity-30 mb-4 rounded"></div>
+            <h3 class="font-semibold mb-2 text-indigo-400">Projeto 2</h3>
+            <p class="text-sm mb-4">Breve descrição do projeto 2.</p>
+            <span class="flex items-center text-purple-600 dark:text-purple-400 hover:underline"> <i
+                class="fab fa-github m-2"></i>Ver no
+              GitHub</span>
+          </div>
+        </a>
+        <a href="#" data-aos="zoom-in" data-aos-delay="500">
+          <div class="dark:bg-gray-800 dark:bg-opacity-50 p-6 rounded-md shadow-md hover:shadow-lg transition">
+            <div class="h-40 bg-gray-700 bg-opacity-30 mb-4 rounded"></div>
+            <h3 class="font-semibold mb-2 text-indigo-400">Projeto 3</h3>
+            <p class="text-sm mb-4">Breve descrição do projeto 3.</p>
+            <span class="flex items-center text-purple-600 dark:text-purple-400 hover:underline"> <i
+                class="fab fa-github m-2"></i>Ver no
+              GitHub</span>
+          </div>
+        </a>
+      </div>
+    </section>
 
-  </body>
+    <!-- FOOTER -->
+    <footer class="relative z-10 py-6 text-center text-sm text-gray-700 dark:text-gray-400">
+      &copy; 2025 Gio. Todos os direitos reservados.
+    </footer>
+
+  </main>
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+
 </html>
