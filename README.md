@@ -18,6 +18,6 @@ Este repositório contém meu portfólio pessoal de desenvolvedora, onde apresen
 
 ## 🔗 Acesse
 
-Você pode visualizar o portfólio publicado em:  
-👉 
+Você pode visualizar o portfólio publicado aqui 👉 [Portfolio](https://portfolio-desouzagios-projects.vercel.app/)
+
 
